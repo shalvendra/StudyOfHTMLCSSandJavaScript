@@ -1,0 +1,135 @@
+/*  
+
+										-- koi bhi flexibal or responsive design bina float or position ke use kiye bina bana sakete hai --
+
+    1= flex-direction
+	
+	aap kis direction mai childrens ko display karwana chate hai row-waise yeah column-waise, row-reverse and column-reverse will reverse the values of children.
+		-- flex-direction: row;  				children will display horizontally.
+		-- flex-direction: row-reverse;			children will display horizontally but in reverse values.
+		-- flex-direction: column;  			children will display vertically.
+		-- flex-direction: column-reverse;		children will display vertically but in reverse values.
+	
+    2= flex-wrap
+	
+		-- flex-wrap:nowrap; 					 saare children ek hi line mai rahenge, agar jaya children hai to wo container se overflow kar jayenge
+												 or ismai hum children ki width bhi set nahi kar sakte wo automaticly change hogi .
+        -- flex-wrap:wrap;    					 children container se overflow nahi honge wo new line se start hone lagenge ,issmai hum children ki width bhi control karsakte hai.
+        -- flex-wrap:wrap-reverse;  			 basically jab content jayada hota hai to jo jayada content hai wo next line se chalu hoga,but yaha previous line se chalu hoga.
+	
+    3= flex-flow
+	
+	The flex-flow property is a shorthand property for setting both the flex-direction and flex-wrap properties.
+		-- flex-flow: row wrap;
+		
+    4= justify-content
+	
+	The justify-content property is used to align the flex items horizontally.
+		-- justify-content: flex-end;			The flex-start value aligns the flex items at the end of the container.
+		-- justify-content: center;				The center value aligns the flex items at the center of the container.
+		-- justify-content: flex-start;			The flex-start value aligns the flex items at the beginning of the container (this is default).
+		-- justify-content: space-around;		The space-around value displays the flex items with space before, between, and after the lines.
+		-- justify-content: space-between;		The space-between value displays the flex items with space between the lines.
+    
+	5= align-items
+	
+	The align-items property is used to align the flex items vertically.
+		-- align-items: center;					The center value aligns the flex items in the middle of the container.
+		-- align-items: flex-start;				The flex-start value aligns the flex items at the top of the container.
+		-- align-items: flex-end;				The flex-end value aligns the flex items at the bottom of the container.
+		-- align-items: stretch;				The stretch value stretches the flex items to fill the container (this is default)
+		
+    6= align-content
+	
+	align-items by default stretch hota hai jisse pehli row ke children jitni jagah stretch ki occupy karenge wo jagaha second line ke children chodh denge or new line se wo start karenge align hona jiss-se first row or second row mai row-gaph ban gayaega, jab haum align content use karenge to koi bhi row gaph nahi banega
+		-- align-content: space-between;		The space-between value displays the flex lines with equal space between them.
+		-- align-content: space-around;			The space-around value displays the flex lines with space before, between, and after them.
+		-- align-content: stretch;				The stretch value stretches the flex lines to take up the remaining space (this is default).
+		-- align-content: center;				The center value displays display the flex lines in the middle of the container.
+		-- align-content: flex-start;			The flex-start value displays the flex lines at the start of the container.
+		-- align-content: flex-end;				The flex-end value displays the flex lines at the end of the container.
+		
+Perfect Centering:
+
+	Set both the justify-content and align-items properties to center, and the flex item will be perfectly centered:
+
+		.flex-container {
+		  display: flex;
+		  height: 300px;
+		  justify-content: center;
+		  align-items: center;
+		}
+		
+NOTE:=  1. agar parent ki height jayada jai to children ki bhi hight increase hogi. 
+        2. parent ko flex dene pe sabhi child automatic fex ban jayenge.
+        3. humne jo bhi kaam kiya parent ko style kar ke kiya par hum child mai bhi flex laga sakte hai.
+*/
+.parent{
+    background-color: burlywood;
+    display: flex;
+    flex-flow: row wrap; 
+    height: 70vh;   
+}
+.child{
+    background-color: chocolate;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    width: 100px;  /*  flex-direction: column; lagaenge to wo width puri lega isliye width kam kar rahe*/
+    /* display: inline-block; (-- par hum is par display nahi lagayenge hum parent 
+    ko batayeng ki wo flex hai to aap ke jo children hai unhe bhi flex treat kijiye )*/
+}
+
+/* agar parent flex hai to child mai hum order assign kar sakte hai ki koan sa child kis order mai rahega */
+/* #one{
+order: 2;
+}
+#two{
+order:1;
+}
+#three{
+order: 3; 
+} */
+
+
+/* extra space jo bache huye hai wo flex-grow cover karta hai (jiska jitna jayada number hoga wo utna cover karega) */
+/*
+ #one{
+    flex-grow: 1;
+    }
+    #two{
+        flex-grow: 1;
+    }
+    #three{
+        flex-grow: 3;
+    }
+     */
+
+    /* extra space na ho to koan se wale ka size kam karna hai par parent mai jo wrap laga hai use nowrap karna hoga nahi to wo automatic width control karne lagega */
+    /* #one{
+        flex-shrink: 1;
+        }
+        #two{
+            flex-shrink: 0;
+        }
+        #three{
+            flex-shrink: 3;
+        } */
+
+
+        /*  initial width kitna hai*/
+        /* #two{
+            flex-basis: 300px; /*2nd child ki width 300px ho jayegi (nowrap use karenge)
+        } */
+
+
+        /* children ko layer mai arrange karne ke liye parent ki height jayada karni padegi jisse sabhi children us mai ban jaaye*/
+        /* #one{
+            align-self: flex-start;
+            }
+            #two{
+                align-self: center;
+            }
+            #three{
+                align-self: flex-end;
+            }  */

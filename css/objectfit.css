@@ -1,0 +1,10 @@
+/* this is for forground  same as background image operation, 
+in which we can change position by object-position and object-fit for cover, contain and fill
+ (the size of images and videos)(object-fit support videos too)*/
+img{
+height: 300px;
+width: 250px;
+border:solid;
+object-fit: cover;
+object-position: left;
+}

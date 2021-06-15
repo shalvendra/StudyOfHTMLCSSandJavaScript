@@ -1,0 +1,26 @@
+                                                        /* border */
+p{
+  border: 10px solid ;
+  border-image-source: url(../img/bor.png);        /*bordr ki width jayada hogi to image bhi jayada jagaha mai clear dikhegi   */
+  border-image-repeat: round;
+  border-image-width: 10px;                         /* border pe jo image ki width banegi*/
+  border-image-slice: 30;                       /* kitni round hogi image like budiya ke baal banane wali machine ki trah*/
+  /* max-width: 150px;                        /*div is a block element, jab usmai koi element agar jayada width nahi le raha hai to hum div ki width kam kar ke size bacha sakte hai*/
+  background-color: lawngreen; 
+  /* border-image: url(img/bor.png) 35 round; */
+
+
+                                                        /* margin */
+/* margin-top: 80px;
+margin-right: 20%; */
+margin: 10px 5px 15px 20px; 
+/* element  move hoga (how much distancedo u want to keep from anoter element)*/                                  
+                                                        /* padding */
+      /* padding: 20px;   */
+      /* padding:10px 5px 15px 20px; */       /*padding mai text upar neeche khisakta hai jisse, jis container ke andar hum padding laga rahe hai uska size
+												                      	usi taraf increase or decrease hoga jis jagah hum padding ka size increase or decrease kar rahe hai
+												                        	agar hum chahate hai ki container ka size change kiye bina hum text ko move kare to "box-sizing: border-box;" likh denge us div ki css ke andar*/
+      padding-top: 30%;                                          
+}
+
+/* element ka contant move hoga container mai */

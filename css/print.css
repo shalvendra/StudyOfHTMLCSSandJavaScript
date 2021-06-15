@@ -1,0 +1,23 @@
+/* by default jo css likhte hai wo har kisi ke lye same rehata hai agar hum chate
+ hai different device pe different tarah se dikhe to hum media query use karenge  */
+
+ @media screen {
+     p{
+        font-size: 30px;
+        color: red;
+        text-align: justify;
+     }
+     
+ }
+
+ @media print {
+    p{
+        background-image: url(../img/f.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        color: orange;
+        text-align: justify;
+        font-style: italic;
+        background-color: orchid;/*kuch settings hume browser se bhi change karni hoti hai kaya yaha browser bgcolor nahi dikha raha ho bg pe*/
+     }
+ }

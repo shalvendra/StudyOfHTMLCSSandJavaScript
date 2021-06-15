@@ -1,0 +1,31 @@
+/* transformation inline elements ke saath kaam nahi karta, yeah to inline-block,yah block ke saath kamm karega */
+/* This property allows you to rotate, scale, move, skew, etc., elements. */
+.button{
+    padding: 20px;
+    margin: 20px;
+}
+
+.button a{
+    padding: 10px 20px;
+    background-color: aquamarine;
+    text-decoration: none;
+    color: black;
+}
+
+.button a:hover{
+    display: inline-block;
+     /* it will move the element by the help of x and y axis*/
+    /* transform: translate(5px,5px);   */
+    /* we can rotate by giving degree (deg hum minus mai bhi de sakte hai) */
+    /* transform: rotate(-20deg); */
+    /* scale se size chota bada hota hai scale(2,3) current width ka multiply first element se,
+     or current height ka multiply 2nd element se */
+     /* transform: scale(2,.7); */
+      /*if you want only width then use scalex(2), same for height scaley(5)*/
+      /* agar hum element ko x-axis or y-axis ki or jhukana chate hai skew() use karenge yeah 2 degree parameter lega x and y axis
+      (skewx(),or skewy() bhi use karsakte hai particular axis ke liye) */
+      /* transform: skew(10deg,15deg); */
+      /* jo bhi kaam ho jaise element ko rotate karna streach karna wo sab center se ho raha tha 
+      but hum chata hai ki particular point se rotate ho  to hum transform origin use karenge*/
+      transform-origin:0% 100% ;
+}

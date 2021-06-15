@@ -1,0 +1,16 @@
+body{
+    background-color: aquamarine;
+}
+div{
+    height: 700px;
+    width: 100%;
+    border: 2px solid black;
+    background-image: url(../img/a.png),url(../img/b.png);
+    /* background-position: center center; */
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* img tag ke andar jo image daalte hai wo ek container mai 
+hoti hai par background-image use karte hai to image container ke background mai lagti hai */

@@ -1,0 +1,18 @@
+a{
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 50px;
+}
+a:link{
+    color: chartreuse;
+}
+a:hover{
+    color: black;
+}
+a:visited{
+    color: rgb(236, 22, 226);
+}
+a:active{
+    color: darkred;
+}
+/* ancor tag ke andar jo bhi element hoga wo link ban jaayega */

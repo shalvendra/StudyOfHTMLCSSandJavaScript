@@ -1,0 +1,41 @@
+/* -- relative hamesha khud ki position se count karta hai stps or apni position pe kisiko aane nahi dea]ta */
+/* -- absolute lagane pe element apni position chodh dega uski position uske baad ka element le lega,
+        absolute hamesha parent element se steps count karta ka par parent positioned hona chahiye agar
+        parent positioned nahi hua to waha body tag se count karega steps */
+/* -- fixed hamesha screen ke viewport se steps count karta hai */
+/* jab ham layers banate hai to jis element ka z-index jayada hoga uski priority jayada hogi dusre elements se */
+.parent{
+    height: 150px;
+    width: 500px;
+    /* background-color: darkgray; */
+    margin: 100px;
+    position: relative;
+}
+.child1{
+    height: 100px;
+    width: 100px;
+    border: solid;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    
+}
+.child2{
+    height: 100px;
+    width: 100px;
+    border: solid;
+    display: inline-block;
+    position: relative;
+    top: 50px;
+    left: -50px;
+    z-index: 2;
+}
+.child3{
+    height: 100px;
+    width: 100px;
+    border: solid;
+    display: inline-block;
+    position: relative;
+    top: 100px;
+    left: -100px;
+}

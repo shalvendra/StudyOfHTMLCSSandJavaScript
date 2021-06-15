@@ -1,0 +1,34 @@
+table{
+    border: 2px solid red;
+    margin: 200px;
+    border-collapse: collapse;    /* saare border ko merge kar dega*/
+                                   /*agar hum border ke beech mai margin use karna chate hai to hume 
+                                   border collapse ko default set karna hoga jo sepetate likhne se ho jaaeyga
+                                   uske baad border spacing laga denge*/
+    /* border-collapse: separate;                                */
+    /*border-spacing: 20px 30px;            top-bottom,left-right*/
+    text-transform: capitalize;
+    height: 150px;
+    width: 100px;
+    text-align: center;
+    empty-cells: hide;                   /* we can hide empty cells*/
+}
+caption{
+    border: 2px solid green;
+    caption-side: bottom;
+}
+th{
+    height: 15px;
+    border: 2px solid;         /*border mai color nahi doge to waha default colour ka jo attribute diya hai fonts ke liye wo use karega color*/
+    color: red;  
+}
+td{
+    height: 10px;
+    color: blue;
+    border: 2px solid;
+    /* margin: 10px;                  cant use margin in tables concept */
+    vertical-align:middle;
+}
+tr{
+    /* border: 2px solid;                            table ki row pe border nahi lagta*/
+}

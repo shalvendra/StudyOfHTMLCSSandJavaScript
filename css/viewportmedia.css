@@ -1,0 +1,67 @@
+/* -- viewport ==  wo white part jaha par hamara webpagedisplayhoga 
+   -- width=device-width == jo element width hai device ke width ke baraabar rakho jo html ko convert karta hai hum us engine ko bata rahe hai
+   -- initial-scale=1.0 ==  element ko zoom in or out karne ki jaroorat nahi hai
+*/
+
+/* 
+media query se hum different-2 width of browser ke liye different types se webpage ko display kar sakte hai
+ */
+ /* https://www.webfx.com/tools/whats-my-browser-size/  ==  it will display browsersize */
+
+ .div1{
+float: left;
+background-color: darkolivegreen;
+width: 70%;
+ }
+ 
+ .div2{
+     width: 30%;
+    float: left;
+    background-color: fuchsia;
+}
+h1{
+    font-size: 80px;
+}
+@media screen and (max-width:768px){   /*apne hisaab se min or max de sakte hai*/
+    .div1{
+        width: 50%;
+         }
+         
+         .div2{
+             width: 50%;
+        }
+}
+
+@media screen and (max-width:455px){ 
+    .div1{
+        color: white;
+         }
+         
+         .div2{
+             color: white;
+        }
+    }
+
+        @media screen and (min-width:400px){   /*400px ke uppar yeh apply hone lagega*/
+                .div1{
+                    background-color: khaki;
+                    }
+                 .div2{
+                    background-color: khaki;
+                    }
+            }
+
+                /* @media screen and (min-width:400px) and (max-width:400px){      -- yaha se le ke yaha tak yeh property lagana hai
+                    .div1{
+                        background-color: khaki;
+                         }
+                         .div2{
+                            background-color: khaki;
+                        }
+                    } */
+
+                    img{
+                        width: 100%;
+                        height: auto; 
+                    }
+                    /* image ki hi trah hum video ko responsive bana sakte hai */

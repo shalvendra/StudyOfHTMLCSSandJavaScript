@@ -1,0 +1,26 @@
+/* html also supports function i.e. url(),rgb(),calc(),rgba(),linear-gradient() */
+
+/* mai chata hu ki div ka size badle but div ke baad jo space hai uska size fix rahe change na ho browser ke chota bada karne pe */
+:root{
+    --blue-color:blue;   /*yeh humne --blue-color,--border-style naam ke var.banaaye hai root ke andar jisse yeh var. hum kahi bhi use kar sakte hai 
+                             (jab bhi hum var. defenition mai jaa ke color yaah kuchbhi change wo sabhi var. pe reflect hoga jaha uss naam ka var. use ho raha hai)*/
+    --border-style:dashed;
+}
+#fun{
+    border: 3px solid;
+    border-color: var(--blue-color);
+    background-color: rgb(9, 190, 245);
+    height: 200px;
+    color: red;
+    /*width: 70%;      div ka size to change hoga but saath mai jo 30% ka blank space hai uska bhi hoga*/
+    width: calc(100% - 300px);    /*jo minus kar rahe hai uska size keval pixel mai hoga*/
+}
+#fun1{
+    margin: 20px;
+    height: 200px;
+    border: 3px var(--border-style);
+    border-color: var(--blue-color);
+    background-color: rgb(9, 190, 245);
+    color: red;
+}
+/* variable with global scope declaared in root selector */

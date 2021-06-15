@@ -1,0 +1,59 @@
+                                                /* Pseudo-classes {action at element}*/
+/* special state of an element are known as Pseudo-classes  (mouse ko hovar karnaa, click karna kisi object or element yeh sab state hai) */
+selector:pesudo-class{
+
+}
+div{
+height: 50px;
+}
+a:link{
+    color: green;
+}
+.s:hover{
+    border:3px solid red;
+}
+/*li:first-child{                     we can select first element from list 
+    color: red;
+    font-size: 30px;
+}
+li:last-child{                          we can select last element from list 
+    color: red;
+    font-size: 30px;
+}
+li:nth-child(3){                     we can select nth element from list 
+    color: red;
+    font-size: 30px;
+}
+li:nth-child(odd){                     we can select odd/even element from list 
+    color: red;
+    font-size: 30px;
+}*/
+input[type=text]:focus{
+    border:3px dashed red;             
+}
+/* it will make the red border */
+
+                                                /* Pseudo-element {style or insert element}*/
+/* style karte ho specific element ko yah kuch insert karte hai css ke dwara */
+/* selector::pesudo-element{
+
+}
+p::first-letter{
+    color:red;
+}
+p::first-line{
+    color:blue;
+} */
+h1::after{
+    content: url(../img/f.jpg);     /*we can add here text or image before and after element*/
+}
+h1::before{
+    content:"hello ji " ;
+}
+                                        /* univarsal-select */
+
+                                        /*You can change the background color and color of selected text by styling ::selection  */
+::selection{
+    color:red;
+    background-color:yellow;
+}

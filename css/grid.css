@@ -1,0 +1,67 @@
+/* 
+== grid works for 2d aliment
+    = lines between row/colum are called row/columns lines
+     (jab do elements ko hum merge karenge to hum kis line se column/row start or end wo line no.se decide hoga)
+     (line tab kaam mai aayega jab multiple div jo jodna ho).
+    = row/column ko increse or decrese kar sakte hai.
+    = dono hi direction mai alignment set kar sakte hai, dusri row mai bhi interfare karne deta hai.
+
+   == flexbox is good in space distribution
+      = agar height set karenge to dusri row mai interfair nahi karega
+      = width ek hi direction mai set hogi.
+     
+*/
+
+.cont{
+    background-color: indianred;
+    padding: 20px;
+    display: grid;   /* grid= row mai divide kar ke chodh deta hai pura block space lega.
+                        inline-grid= jitna content hai utna hi space use karega or grid ban jaaeyga*/
+     /* yeah 200px or 400px ke column mai baat dega (auto==  right mai jitna space bacha hai wo automatic 3rd column occupy kar lega)
+    (hum chahte hai ki sabhi column barabar space le to sab ko auto kar do), hum % mai bhi de sakte hai*/
+     /* grid-template-columns: 200px 300px auto;        */
+    /* peheli row mei 100px ki bana dega, dusri 200px ki,....*/
+    /* grid-template-rows: 200px 200px auto;   */
+    /*column mai gaph de dega 20px ka*/
+    /* grid-column-gap: 20px;   */
+    /*rows mai gaph de dega 30px ka*/
+    /* grid-row-gap:30px;       */
+    /* end, start, center karega content ko (space between, spacearound bhi use karsakte hai), align content bhi use kar sakte haihum*/
+    /* justify-content: center;    */
+    
+
+}
+.grid{
+    background-color: wheat;
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 40px;
+    text-align: center;
+}
+
+
+   /* suru ke do column merge karna hai to dono column ko merge karne ke liye kis line se suru ho rahe hai
+        or ki pe khatam ho rahe hai wo line number ke dwara dena padega. (suru ke 2 column = line1 se suru hoga or line3 pe khatam) */
+
+        #grid1{
+            /* grid-column-start: 1;
+                grid-column-end: 3; */
+            /* grid-column: 1/3; */
+            /* koanse column ko kis se merge karna hai,( pehele column se /  3 column ko jodo )*/
+            /* grid-column: 1 / span 3;     */
+            /* grid-row-start: 1;
+            grid-row-end: 4; */
+            /* grid-row: 1/3; */
+            /* grid-row: 1 / span 3;    */
+        }
+
+
+        /* row or column dono ko combined kar ke ek area bannana hai
+        hum chate hai ki 5yh div 2,3,6 ka area bhi le le */
+
+        #grid5{
+            /* grid-area: 1/2/span 2/span 3; */ 
+            /*first-rowline/first column line,end-rowlin/end-columnline*/
+                /* grid-area: 1/2/3/4; */
+    
+        } 

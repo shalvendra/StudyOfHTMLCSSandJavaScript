@@ -1,0 +1,10 @@
+#parent{
+    border:3px solid green;
+    margin: 50px;
+    width: 500px;
+    padding-left: 20px;
+    height: 100px;
+    background-color: salmon;
+   /* box-shadow: 10px 20px 10px gray;    x-axis y-axis shadow color*/
+    box-shadow: 10px 20px 10px gray inset;   /* x-axis y-axis shadow color (andar ki side shadow)*/
+}

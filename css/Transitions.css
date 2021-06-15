@@ -1,0 +1,27 @@
+/*  kisi bhi element ka property change hota hai to wo jhatke se ek dum ho jaata hai hum chate hai ki usmai jo 
+change aaye wo humare hisaab se aaye chahe wo smooth ho yaah fast ho*/
+
+.button{
+ height: 100px;
+ width: 100px;
+ background-color: green;
+ margin: 100px;
+ padding: 30px;
+ box-sizing: border-box;  
+  /*do chheze main hai kaya property change kana hai or kis duration mai karna hai  */
+  /* transition-property:width, background-color;     -- but naa bhi lagaye to chalega yaha pe hum (all)
+   bhi kar sakte hai to wo saari property pe lag jaayega by-defaflt yeh all hota hai (jis se hum na lagaye to prob. nahi aati)*/
+  transition-duration:3s ;
+  /* transition-delay= kitni der mai start hoga element maichange hona */
+  transition-delay: 1s;
+  /* saare operation mai speed same rahati hai par hum speed ko apne hisaab se modify kar sakte hai
+  (jaise suru mai tez ho phir dheeme ho jaaye ) */
+  transition-timing-function: ease;
+}
+/* hover pe width increase kar rahe hai to wo ek dum jhtke se ho raha hai */
+.button:hover{
+    width: 200px;
+    background-color: red;
+}
+/* NOTE:= hum block element ki height/width bada sakte hai inline element ki nahi
+<a> ek inline element hai */

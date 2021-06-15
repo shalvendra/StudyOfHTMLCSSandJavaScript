@@ -1,0 +1,14 @@
+#parent{
+    /* we can use image and gradient both
+    background-repeat:no-repeat ;
+    background-image:url(img/f.jpg), radial-gradient(circle,green,red ,blue );
+    */
+    border: solid;
+    height: 600px;
+   /* background-image: linear-gradient(blue,red);    display colors top to bottom default*/
+   /* background-image: linear-gradient(to right, red , yellow,green);  display colors left to right */
+    /*background-image: linear-gradient(to bottom right, red 20%, yellow 30%,green 50%);  cornor se start hoke corner pe khatam or koan sa color kitni jagah lega wo hum %mai de sakte*/
+    /*background-image: linear-gradient(120deg, red, yellow);     we can rotate at degree 170 is degree*/
+    /* background-image: radial-gradient(red 20%, yellow 30%,green 50%); it will make the ecllipse */
+    background-image: radial-gradient(circle, red 20%, yellow 30%,green 50%); /*it will make the circle*/
+}

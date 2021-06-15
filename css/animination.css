@@ -1,0 +1,49 @@
+/* using for animination yah hum keyframe lagate hai usmai bataate hai ki kab kaya karna hai
+(koan si property change hogi , kab hogi , kis duration mai hogi)*/
+/* animination ke start hone se leke khatam hone tak kis time pekaya kaya hoga yeah hum keyframes mai likhte hai */
+@keyframes nameofkeyframe{
+    from{background-color: paleturquoise;} /*start hoga animination to kaya hoga*/
+    to{background-color: peru;}   /*khatam hoga animination to kaya hoga*/
+}
+
+@keyframes shalu{
+    /* hum isse % mai bhi de sakte hai jab hum % mai denge to wah 0% se leke 100% tak
+    leta hai jo ki animination-duration pe depent hota hai means animination-duration
+    ko hum % ke time mai baat sakte mai( 2s ke 10% mai kaya hoga , 50% pe kaya hoga) */
+    0%{background-color: peru;}
+    25%{width: 200px; background-color: cadetblue;}
+    50%{background-color: orange;}
+    75%{width: 100px; background-color: cyan;}
+    100%{background-color: blue;}
+}
+
+.div1{
+    height: 100px;
+    width: 100px;
+    margin: 100px;
+    background-color: orchid;
+    animation-name: nameofkeyframe;
+    animation-duration: 2s;     /*name and duration of animination both are cumpusory*/
+}
+
+.div2{
+    height: 100px;
+    width: 100px;
+    margin: 200px;
+    background-color: gray;
+    animation-name: shalu;
+    animation-duration: 4s; 
+    animation-delay: 2s;
+    animation-iteration-count: 3; /* animination kitni baar hoga ,we can use infinity too*/
+}
+.div3{
+    height: 100px;
+    width: 100px;
+    margin: 200px;
+    background-color: gray;
+    animation-name: shalu;
+    animation-duration: 4s; 
+    animation-delay: 2s;
+    animation-iteration-count: 3;
+    animation-direction: reverse; /*reverse chalega, alternate mai start same hoga phir reverse hojayega aise hi alternate chalta rahega*/
+}

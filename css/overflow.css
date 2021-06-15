@@ -1,0 +1,8 @@
+/* containt jab container ke height or width se jayada ho to data bahar chala jaayega data overflow na ho is liye hum overflow use krte hai */
+#parent{
+    border: solid;
+    height: 500px;
+    overflow: scroll;
+   /* overflow-y: scroll; y-axis pe scroll bar de dega or x asix ka hide kar dega vice versa too */
+    /* overflow: auto; */
+}

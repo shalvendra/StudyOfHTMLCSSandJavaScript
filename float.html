@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        #parent{
+            border:2px red solid;
+            /* width:500px; */
+            /* height:100px; */
+            margin-top:150px;
+            margin-left:50px;
+            padding:10px 30px;
+        }
+        .child1{
+            width: 50%;
+            height: 70px;
+            background-color: green;
+            display: inline-block;
+            border:  solid;
+            /* float: left; */
+        }
+     /* = li ki thrah saare div pe float left denge to saare div bhi apna extra space chodh ke left mai ho jayenge jitna content hai uske joisaab se
+      div{
+          float:left;
+      }
+      = width se div ki width to kam ho jaati hai par block element hamesa new line se suru hota hai, wo wo new line se suru  ho is
+      wajah se hum display block-inline karte hai
+      = clear right: jo bhi element float right hai aap us element ke right mai nahi rah sakte, jisse wah element dusri line mai aajata hai
+       ( clear ek floated and non-floated elements par bhi lag sakta hai, clear hamesha new floated element pe lagayenge jisse wah duse divs ke neeche aa jaye )
+      = you have to use overflow property in parent element when you will use float in clild element.
+      = agar 2 div dono hi float use kar rahe hai ek ki height 500px hai or dusre ki 400px hai , jab hum 3rd div banaenge to waha 
+      jo 2nd div ke neeche jo space bacha hai wo 3rd div use karega kyo ki wo usi ko new line samjega, yeh cheez na ho isske liye hum clear both de
+       laga denge jis se wah na to 1st div or na hi 2nd div ke neeche rah paayega.
+      */
+        .child2{
+            border: solid;
+            width: 50%;
+            height: 70px;
+            background-color: red;
+            display: inline-block;
+            /* float: left; */
+        }
+
+        .child3{
+            border: solid;
+            /* width: 80px; */
+            height: 70px;
+            background-color: blue;
+            display: inline-block;
+            /* float: left; */
+        }
+        ol{
+            list-style: none;
+        }
+        li{
+            border: solid;
+            float: right;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="parent">
+        <div class="child1">a</div>
+        <div class="child2">g</div>
+        <!-- <div class="child3">c</div> -->
+    </div>
+    <ol>
+        <li 1="">jj</li>
+        <li 1="">rr</li>
+        <li 1=""><img src="img/f.jpg" height="20px" width="20px" alt=""></li>
+        <li 1="">gh</li>
+    </ol>
+</body>
+
+</html>

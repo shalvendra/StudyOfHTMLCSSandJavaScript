@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="css/grid.css"> -->
+    <title>Document</title>
+    <style>
+        .cont{
+            background-color: indianred;
+            padding: 20px;
+            display: grid;
+            grid-template-areas: 
+            'header header header header header header '
+            'menu main mainmain right right'
+            'menu footer footer footer footer footer ';
+            grid-gap: 10px;
+        }
+        .grid{
+            background-color: wheat;
+            border: 1px solid black;
+            padding: 20px;
+            font-size: 40px;
+            text-align: center;
+        }
+        #grid1{
+            grid-area: header;
+        }
+        #grid2{
+            grid-area: menu;
+        }
+        #grid3{
+            grid-area: main;
+        }
+        #grid2{
+            grid-area: right;
+        }
+
+        #grid5{
+                grid-area: footer;
+        } 
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div class="grid" id="grid1">1</div>
+        <div class="grid" id="grid2">2</div>
+        <div class="grid" id="grid3">3</div>
+        <div class="grid" id="grid4">4</div>
+        <div class="grid" id="grid5">5</div>
+        <!-- <div class="grid" id="grid6">6</div>
+        <div class="grid" id="grid7">7</div>
+        <div class="grid" id="grid8">8</div>
+        <div class="grid" id="grid9">9</div> -->
+    </div>
+</body>
+</html> 

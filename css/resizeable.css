@@ -1,0 +1,8 @@
+/* kisi bhi block element ka size chota yah bada kar sakte hai by pulling it, overflow scroll,
+auto ho yaa hidden ho visible nahi hona chahiye (visible means agar wo overflow hi kar gaya to resize karne ka kaya fayaada  hai)*/
+#parent{
+    border: 3px solid red;
+    height: 500px;
+    overflow: auto;
+    resize: both;
+}

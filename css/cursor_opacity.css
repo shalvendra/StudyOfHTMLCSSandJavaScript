@@ -1,0 +1,28 @@
+/* opacity se kisi bi element ko hum transparent bana sakte hai (0-1) value de ke */
+/* #parent{
+    background-color: green;
+    opacity: .5;
+} */
+
+/* cursor se hum cursor ki design change kar sakte hai (cursor ki design change ho jayegi jab parent naam ke div pe aayega cursor) */
+
+/* #parent{
+    background-color: green;
+    cursor: grab;
+} */
+
+/* cursor ko div par hover karne pe div ka color hala green ho jayega */
+
+/* #parent:hover{
+    background-color: green;
+    opacity: 0.5;
+} */
+
+/* cursor ko div par hover karne pe div ka color blur ho jayega */
+#parent{
+    background-color: green;
+}
+#parent:hover{
+    opacity: 0.5;
+    cursor: progress;
+}

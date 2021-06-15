@@ -1,0 +1,17 @@
+html{
+    font-size: 20px;
+}
+#parentdiv{
+    border: solid red;
+    /* height: 80vh;      browser ki height or width choti or badi karoge to div ki jo height or width hai wo change 
+    width: 80vw;          hoti rahegi wo katega nahi.*/ 
+ font-size: 30px;
+ 
+}
+#childdiv{
+   border: solid blue;
+   width: 50%;
+   font-size: 2rem;         /* isska multiply root element(html) ke font size mai kar dega (html_relative)*/
+   /*font-size: .8em;        isska multiply parentdiv ke font size mai kar dega(agar parent ka size change karenge to child ka automatic ho jayega) (parent-relative)*/
+}
+

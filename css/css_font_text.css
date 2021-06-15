@@ -1,0 +1,29 @@
+                                                        /* css of fonts */
+/* @font-face{
+    font-family: sh;
+    src: url(../font/Ne.ttf);
+}
+p{
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bold;
+    font-family: sh;
+} */
+
+                                                         /* css of text */
+p{
+border: 3px solid green;
+text-align: justify;
+text-align-last: center;
+text-decoration: underline;
+text-decoration-color: red;
+text-decoration-style: dashed;
+text-decoration-thickness: 10px;
+text-transform: capitalize;
+direction: ltr;
+letter-spacing: 4px;
+word-spacing: 4px;
+white-space: pre;
+/*text-indent: 20px;             20px chodh ke likhna surukarega
+text-shadow: 3px 2px 5px gray;*/
+}
